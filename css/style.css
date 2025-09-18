@@ -40,10 +40,6 @@
             background-color: green;
         }
 
-        input[type="text"]:empty{
-            background-color: aliceblue;
-        }
-
         form > div{
             margin-bottom: 1rem;
         }
