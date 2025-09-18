@@ -31,20 +31,23 @@
             margin-right: auto;
         }
 
-        input:invalid{
+        input[type="text"]:invalid, input[type="email"]:invalid{
             background-color: red;
             border: 2px dashed red;
         }
 
-        input:valid{
+        input[type="text"]:valid, input[type="email"]:valid{
             background-color: green;
         }
 
+        input[type="text"]:empty{
+            background-color: aliceblue;
+        }
+
         form > div{
-            margin-bottom: 10px;
-            padding: 0.1px;
+            margin-bottom: 1rem;
         }
 
         form > label{
-            margin-bottom: 1px;
+            margin-bottom: .5rem;
         }
