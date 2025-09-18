@@ -36,3 +36,10 @@
         input:valid{
             background-color: green;
         }
+
+        div{
+            margin-bottom: 1rem;
+        }
+        iframe{
+            align-self: center;
+        }

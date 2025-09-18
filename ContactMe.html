@@ -7,14 +7,14 @@
     </head>
     <body>
         <div class="embed">
-        <iframe src="hhttps://www.youtube.com/embed/qHYQRaDDVGg/" title="Hallow Queen - Danny Baranowsky"></iframe>
+        <iframe src="https://www.youtube.com/embed/qHYQRaDDVGg" title="Hallow Queen - Danny Baranowsky"></iframe>
         </div>
 
         <form name="feedback">
-            <label>First Name:<span class="star">*</span><input type="text" name="fname" placeholder="anonymous" required></label>
-            <label>Last Name:<span class="star">*</span><input type="text" name="lname" placeholder="anonymous" required></label>
+            <label>First Name:<span class="star">*</span> <input type="text" name="fname" placeholder="anonymous" required></label>
+            <label>Last Name:<span class="star">*</span> <input type="text" name="lname" placeholder="anonymous" required></label>
             <br>
-            <label>Email Address<input type="email" name="mail" placeholder="name@domain.com" pattern="[^@\s]+@[^@\s]+\.[^@\s]+"></label>
+            <label>Email Address: <input type="email" name="mail" placeholder="name@domain.com" pattern="[^@\s]+@[^@\s]+\.[^@\s]+"></label>
 
             <div>
             <label>
@@ -62,8 +62,13 @@
             </label>
             </div>
 
+            <div>
             <input type="submit" name="submit" value="Submit">
             <input type="reset" name="reset" value="Reset Form">
+            </div>
 
         </form>
+        <form action="index.html">
+                <input type="submit" name="return" value="Return to Homepage">
+            </form>
     </body>
