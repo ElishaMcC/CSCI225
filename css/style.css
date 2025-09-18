@@ -35,10 +35,10 @@
         }
 
         form > div{
-            margin-bottom: .5rem;
+            margin-bottom: .25rem;
             padding: 0.1px;
         }
 
         form > label{
-            margin-bottom: .25rem;
+            margin-bottom: .01rem;
         }
