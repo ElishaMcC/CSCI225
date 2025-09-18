@@ -34,6 +34,11 @@
             background-color: green;
         }
 
-        div{
-            margin-bottom: 10rem;
+        form > div{
+            margin-bottom: 2rem;
+            padding: 0.1px;
+        }
+
+        form > label{
+            margin-bottom: 1rem;
         }
