@@ -20,13 +20,12 @@
         body{
             background-color: hsl(204, 17%, 55%);
         }
-        
-        :required{
-            border-color: red;
-        }
 
         .star{
             color: red;
+        }
+        input:blank{
+            background-color: aliceblue;
         }
 
         input:invalid{

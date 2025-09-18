@@ -7,23 +7,25 @@
     </head>
     <body>
         <div class="embed">
-        <iframe src="https://www.youtube.com/watch?v=qHYQRaDDVGg" title="Hallow Queen - Danny Baranowsky"></iframe>
+        <iframe src="hhttps://www.youtube.com/embed/qHYQRaDDVGg/" title="Hallow Queen - Danny Baranowsky"></iframe>
         </div>
 
         <form name="feedback">
             <label>First Name:<span class="star">*</span><input type="text" name="fname" placeholder="anonymous" required></label>
             <label>Last Name:<span class="star">*</span><input type="text" name="lname" placeholder="anonymous" required></label>
+            <br>
+            <label>Email Address<input type="email" name="mail" placeholder="name@domain.com" pattern="[^@\s]+@[^@\s]+\.[^@\s]+"></label>
 
-            <label><input type="email" name="mail" placeholder="name@domain.com" pattern="[^@\s]+@[^@\s]+\.[^@\s]+"></label>
-
+            <div>
             <label>
                 Would you recommend this website to others?
             </label>
                 <br>
-                <input type="radio" name="recommend" value="yes">
+                <label><input type="radio" name="recommend" value="yes">Yes</label>
                 <br>
-                <input type="radio" name="recommend" value="no">
+                <label><input type="radio" name="recommend" value="no">No</label>
                 <br>
+            </div>
 
             <select id="favweb" name="favWeb">
                 <option value="Google">Google</option>
@@ -36,6 +38,7 @@
                 <option value="Patreon">Patreon</option>
             </select>
 
+            <div>
             <label>
                 How would you rate this site?
                 <br>
@@ -43,16 +46,21 @@
                 <input type="range" name="rating" min="1" max="10" value="5">
                 10
             </label>
+            </div>
 
+            <div>
             <label>
                 Additional Comments:
                 <textarea name="comment" placeholder="I suggest..."></textarea>
             </label>
+            </div>
 
+            <div>
             <label>(Optional) Please insert a picture of your cute pet
                 <br>
                 <input type="file" name="pet">
             </label>
+            </div>
 
             <input type="submit" name="submit" value="Submit">
             <input type="reset" name="reset" value="Reset Form">
