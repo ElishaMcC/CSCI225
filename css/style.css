@@ -24,9 +24,6 @@
         .star{
             color: red;
         }
-        input:blank{
-            background-color: aliceblue;
-        }
 
         input:invalid{
             background-color: red;
@@ -38,8 +35,9 @@
         }
 
         div{
-            margin-bottom: 1rem;
+            margin-bottom: 3rem;
         }
+
         iframe{
             align-self: center;
         }
