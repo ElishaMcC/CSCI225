@@ -10,7 +10,7 @@
         <iframe src="https://www.youtube.com/embed/qHYQRaDDVGg" title="Hallow Queen - Danny Baranowsky"></iframe>
         </div>
 
-        <form name="feedback">
+        < name="feedback">
             <label>First Name:<span class="star">*</span> <input type="text" name="fname" placeholder="anonymous" required></label>
             <label>Last Name:<span class="star">*</span> <input type="text" name="lname" placeholder="anonymous" required></label>
             <br>
@@ -27,16 +27,20 @@
                 <br>
             </div>
 
-            <select id="favweb" name="favWeb">
-                <option value="Google">Google</option>
-                <option value="Twitter">Twitter</option>
-                <option value="Bluesky">Bluesky</option>
-                <option value="Discord">Discord</option>
-                <option value="Youtube">Youtube</option>
-                <option value="Twitch">Twitch</option>
-                <option value="Ko-fi">Ko-fi</option>
-                <option value="Patreon">Patreon</option>
-            </select>
+            <div><label>
+                Preffered Site:
+                <br>
+                <select id="favweb" name="favWeb">
+                    <option value="Google">Google</option>
+                    <option value="Twitter">Twitter</option>
+                    <option value="Bluesky">Bluesky</option>
+                    <option value="Discord">Discord</option>
+                    <option value="Youtube">Youtube</option>
+                    <option value="Twitch">Twitch</option>
+                    <option value="Ko-fi">Ko-fi</option>
+                    <option value="Patreon">Patreon</option>
+                </select>
+            </div></label>
 
             <div>
             <label>
@@ -51,7 +55,8 @@
             <div>
             <label>
                 Additional Comments:
-                <textarea name="comment" placeholder="I suggest..."></textarea>
+                <br>
+                <textarea name="comment" placeholder="I suggest..." cols="12" rows="9"></textarea>
             </label>
             </div>
 
