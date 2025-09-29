@@ -1,0 +1,30 @@
+
+        body{
+            background-color: hsl(204, 17%, 55%);
+        }
+
+        .star{
+            color: red;
+        }
+
+        .embed{
+            position: relative;
+            left: 25vw;
+        }
+
+        input[type="text"]:invalid, input[type="email"]:invalid{
+            background-color: red;
+            border: 2px dashed red;
+        }
+
+        input[type="text"]:valid, input[type="email"]:valid{
+            background-color: green;
+        }
+
+        form > div{
+            margin-bottom: 1rem;
+        }
+
+        form > label{
+            margin-bottom: .5rem;
+        }

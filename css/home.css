@@ -1,0 +1,32 @@
+        table{
+                    border: 1px solid black;
+                    border-collapse: collapse;
+                    table-layout: fixed;
+                    width: 30%;
+                    height: 25vh;
+        }
+        
+        td{
+            overflow: hidden;
+            height: 20px;
+        }
+
+        th{
+            overflow: hidden;
+            height: 20px;
+            border: 1px solid black;
+        }
+
+        .quarter {
+            border-collapse: collapse;
+            border: 1px dashed black;
+        }
+
+        body{
+            background-color: hsl(204, 17%, 55%);
+        }
+
+        #Introduction, #Portfolio, #Assignments, #Schedule, #ContactInfo{
+            position: absolute;
+        }
+
