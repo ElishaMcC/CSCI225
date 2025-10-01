@@ -1,22 +1,28 @@
 
         html{
+            height: 100vh;
             background-image: url("/img/SLBackground.png");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-            height: 100%;
         }
+
         table{
-                    border: 1px solid black;
-                    border-collapse: collapse;
-                    table-layout: fixed;
-                    width: 30%;
-                    height: 25vh;
+            font-size: 6pt;
+            border: 1px solid black;
+            border-collapse: collapse;
+            table-layout: fixed;
+            width: 50%;
+            height: 50%;
+        }
+
+        tr{
+            height: 5px;
         }
         
-        td{
+        td[rowspan]{
             overflow: hidden;
-            height: 20px;
+            line-height: 7px;
         }
 
         th{
@@ -30,9 +36,23 @@
             border: 1px dashed black;
         }
 
-
         #Introduction, #Portfolio, #Assignments, #Schedule, #ContactInfo{
+            transition: 1s ease-in-out;
+        }
+
+        .content{
+            display: none;
+        }
+
+        #Introduction h1:hover + .content, #Portfolio h1:hover + .content, #Assignments h1:hover + .content, #Schedule h1:hover + .content, #ContactInfo h1:hover + .content{
+            display: block;
+            left: 10%;
+        }
+
+        footer{
             position: absolute;
-            visibility: hidden;
+            bottom: 0vh;
+            right: 0vw;
+            color: hsl(180, 61%, 23%);
         }
 
