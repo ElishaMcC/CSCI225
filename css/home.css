@@ -1,5 +1,4 @@
-
-        html{
+        body{
             height: 100vh;
             background-image: url("/img/SLBackground.png");
             background-repeat: no-repeat;
@@ -7,17 +6,31 @@
             background-position: center;
         }
 
+        div, address{
+            position: absolute;
+        }
+
+        #Navbar{
+            visibility:hidden;
+        }
+
         table{
             font-size: 6pt;
             border: 1px solid black;
+            padding: 2px;
+            vertical-align: auto;
+            empty-cells: hide;
             border-collapse: collapse;
             table-layout: fixed;
-            width: 50%;
-            height: 50%;
+            width: 100%;
+            height: 100%;
         }
 
         tr{
             height: 5px;
+        }
+        tr:nth-child(even){
+            background-color: #3c5369;
         }
         
         td[rowspan]{
@@ -31,28 +44,115 @@
             border: 1px solid black;
         }
 
-        .quarter {
-            border-collapse: collapse;
-            border: 1px dashed black;
+        a{
+            text-decoration: none;
         }
 
-        #Introduction, #Portfolio, #Assignments, #Schedule, #ContactInfo{
-            transition: 1s ease-in-out;
+        ul, ol{
+            color: hsl(69, 91%, 9%);
+            font-weight: 100;
+            list-style-image: url("/img/pearl.png");
+        }
+
+
+        p{
+            line-height: 20px;
+            text-align: center;
+            color: hsl(69, 91%, 9%);
+            font-family: "Lora", serif;
+            font-optical-sizing: auto;
+            font-weight: 100;
+            font-style: normal;
+        }
+
+        p::first-letter{
+            font-size: 20px;
+        }
+
+        h1{
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 1px;
+            text-shadow: 2px 1px 1px hsl(258, 33%, 14%);
+            transition:cubic-bezier(1, 0, 0, 1);
+            clip-path: polygon(0% 0%, 90% 10%, 100% 90%, 10% 100%);
+            padding: 1rem 2rem;
+            width: 290px;
+            height: 55px;
+            background-color: hsl(212, 28%, 40%);
+            filter: drop-shadow(20px 20px 5px hsl(258, 58%, 65%));
+            transition: transform 0.3s ease-in-out;
+        }
+
+
+        .quarter {
+            border-collapse: collapse;
+        }
+
+        #Introduction{
+            left: 5vw;
+            top: 5vh;
+        }
+        #Assignments{
+            left: 80vw;
+            top: 5vh;
+        }
+        #Portfolio{
+            left: 5vw;
+            top: 80vh;
+        }
+        #Portfolio > p{
+            box-shadow: 2px 2px 1px black;
+        }
+        #Schedule{
+            left: 80vw;
+            top: 80vh;
+        }
+
+        #ContactInfo{
+            left: 40vw;
+            top: 0vh;
+        }
+
+        #Introduction h1{
+            rotate: 20deg;
+        }
+        #Assignments h1{
+            rotate: -20deg;
+        }
+        #Portfolio h1{
+            rotate: -20deg;
+        }
+        #Schedule h1{
+            rotate: 20deg;
         }
 
         .content{
-            display: none;
+            background-color: hsl(210, 16%, 50%);
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 1s ease, opacity 0.5s ease;
+            opacity: 0;
+            z-index: 10;
         }
 
-        #Introduction h1:hover + .content, #Portfolio h1:hover + .content, #Assignments h1:hover + .content, #Schedule h1:hover + .content, #ContactInfo h1:hover + .content{
-            display: block;
-            left: 10%;
+        #Introduction:hover .content, #Portfolio:hover .content, #Assignments:hover .content, #Schedule:hover .content, #ContactInfo:hover .content{
+            max-height: 500px;
+            opacity: 1;
+            rotate: 0deg;
         }
+        #Introduction h1:hover, #Assignments h1:hover, #Portfolio h1:hover, #Schedule h1:hover, #ContactInfo h1:hover {
+            transform: rotate(0deg);
+}
 
         footer{
-            position: absolute;
+            position: fixed;
             bottom: 0vh;
             right: 0vw;
-            color: hsl(180, 61%, 23%);
+            background-color: hsl(180, 61%, 23%);
         }
 
