@@ -1,82 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Elisha McCanick: Contact Me</title>
-        <link rel="stylesheet" href="css/contact.css">
-    </head>
-    <body>
-        <div class="embed">
-        <iframe src="https://www.youtube.com/embed/qHYQRaDDVGg" title="Hallow Queen - Danny Baranowsky"></iframe>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Elisha McCanick: Contact Me</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container mb-4">
+        <div class="row">
+            <!-- _________Navbar DIV box___________ -->
+            <DIV class="Navbar navbar-expand-lg">
+                <ul class="navbar nav">
+                    <li class="nav-item"><a href="https://www.usca.edu/" target="_blank">USCA Main Website</a></li>
+                    <li class="nav-item"><a href="/index.html">Assignments</a></li>
+                    <li class="nav-item"><a href="#ContactInfo">Contact Information</a></li>
+                    <li class="nav-item"><a href="#Schedule">My Schedule</a></li>
+                    <li class="nav-item"><a href="https://youtu.be/kstW4--CVPk" target="_blank"><img src="img/oiia.jpg"
+                                alt="cat" width="45" height="45"></a></li>
+                </ul>
+            </DIV>
+        </div>
         </div>
 
-        <form name="feedback">
-            <div>
-            <label>First Name:<span class="star">*</span> <input type="text" name="fname" placeholder="anonymous" required></label>
-            <label>Last Name:<span class="star">*</span> <input type="text" name="lname" placeholder="anonymous" required></label>
-            <br>
-            <label>Email Address: <input type="email" name="mail" placeholder="name@domain.com" pattern="[^@\s]+@[^@\s]+\.[^@\s]+"></label>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="embed-responsive">
+                        <iframe class="w-100" src="https://www.youtube.com/embed/qHYQRaDDVGg" title="Hallow Queen - Danny Baranowsky"
+                            height="500" width="400" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="feedback form-floating mb-3">
+                        <form name="feedback">
+                            <div class="form-floating">
+                                <input type="text" name="fname" id="fname" class="form-control" placeholder="anonymous"
+                                    required>
+                                <label for="fname">First Name:<span class="star">*</span></label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="text" name="lname" id="lname" class="form-control" placeholder="anonymous"
+                                    required>
+                                <label for="lname">Last Name:<span class="star">*</span></label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="email" name="mail" id="mail" class="form-control"
+                                    placeholder="name@domain.com" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+                                <label for="mail">Email Address:</label>
+                            </div>
+
+
+                            <div>
+                                <label>
+                                    Would you recommend this website to others?
+                                </label>
+                                <br>
+                                <label><input type="radio" name="recommend" value="yes">Yes</label>
+                                <label><input type="radio" name="recommend" value="no">No</label>
+                                <br>
+                            </div>
+
+                            <div><label>
+                                    Preferred Site:
+                                    <br>
+                                    <select id="favweb" name="favWeb">
+                                        <option value="Google">Google</option>
+                                        <option value="Twitter">Twitter</option>
+                                        <option value="Bluesky">Bluesky</option>
+                                        <option value="Discord">Discord</option>
+                                        <option value="Youtube">Youtube</option>
+                                        <option value="Twitch">Twitch</option>
+                                        <option value="Ko-fi">Ko-fi</option>
+                                        <option value="Patreon">Patreon</option>
+                                    </select>
+                                </label></div>
+
+                            <div>
+                                <label>
+                                    How would you rate this site?
+                                    <br>
+                                    1
+                                    <input type="range" name="rating" min="1" max="10" value="5">
+                                    10
+                                </label>
+                            </div>
+
+                            <div>
+                                <label>
+                                    Additional Comments:
+                                    <br>
+                                    <textarea name="comment" placeholder="I suggest..." cols="48" rows="9"></textarea>
+                                </label>
+                            </div>
+
+                            <div>
+                                <label>(Optional) Please insert a picture of your cute pet
+                                    <br>
+                                    <input type="file" name="pet">
+                                </label>
+                            </div>
+
+                            <div>
+                                <input type="submit" name="submit" value="Submit">
+                                <input type="reset" name="reset" value="Reset Form">
+                            </div>
+
+                        </form>
+                        <form action="index.html">
+                            <input type="submit" name="return" value="Return to Homepage">
+                        </form>
+                    </div>
+                </div>
             </div>
-            
-
-            <div>
-            <label>
-                Would you recommend this website to others?
-            </label>
-                <br>
-                <label><input type="radio" name="recommend" value="yes">Yes</label>
-                <br>
-                <label><input type="radio" name="recommend" value="no">No</label>
-                <br>
-            </div>
-
-            <div><label>
-                Preferred Site:
-                <br>
-                <select id="favweb" name="favWeb">
-                    <option value="Google">Google</option>
-                    <option value="Twitter">Twitter</option>
-                    <option value="Bluesky">Bluesky</option>
-                    <option value="Discord">Discord</option>
-                    <option value="Youtube">Youtube</option>
-                    <option value="Twitch">Twitch</option>
-                    <option value="Ko-fi">Ko-fi</option>
-                    <option value="Patreon">Patreon</option>
-                </select>
-            </label></div>
-
-            <div>
-            <label>
-                How would you rate this site?
-                <br>
-                1
-                <input type="range" name="rating" min="1" max="10" value="5">
-                10
-            </label>
-            </div>
-
-            <div>
-            <label>
-                Additional Comments:
-                <br>
-                <textarea name="comment" placeholder="I suggest..." cols="48" rows="9"></textarea>
-            </label>
-            </div>
-
-            <div>
-            <label>(Optional) Please insert a picture of your cute pet
-                <br>
-                <input type="file" name="pet">
-            </label>
-            </div>
-
-            <div>
-            <input type="submit" name="submit" value="Submit">
-            <input type="reset" name="reset" value="Reset Form">
-            </div>
-
-        </form>
-        <form action="index.html">
-                <input type="submit" name="return" value="Return to Homepage">
-            </form>
-    </body>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>

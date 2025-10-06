@@ -1,30 +1,44 @@
+body {
+    background-color: hsl(204, 17%, 35%) !important;
+}
 
-        body{
-            background-color: hsl(204, 17%, 55%);
-        }
+.star {
+    color: red;
+}
 
-        .star{
-            color: red;
-        }
+.embed {
+    position: relative;
+    left: 25vw;
+}
 
-        .embed{
-            position: relative;
-            left: 25vw;
-        }
+input[type="text"]:invalid,
+input[type="email"]:invalid {
+    background-color: red;
+    border: 2px dashed red;
+}
 
-        input[type="text"]:invalid, input[type="email"]:invalid{
-            background-color: red;
-            border: 2px dashed red;
-        }
+input[type="text"]:valid,
+input[type="email"]:valid {
+    background-color: green;
+}
 
-        input[type="text"]:valid, input[type="email"]:valid{
-            background-color: green;
-        }
+form>div {
+    margin-bottom: 1rem;
+}
 
-        form > div{
-            margin-bottom: 1rem;
-        }
+form>label {
+    margin-bottom: .5rem;
+}
 
-        form > label{
-            margin-bottom: .5rem;
-        }
+
+#Navbar li {
+    display: inline-block;
+    margin: 20px;
+}
+
+.feedback{
+    background-color: hsl(230, 37%, 41%);
+    border-radius: 20px;
+    padding: 10px;
+}
+
