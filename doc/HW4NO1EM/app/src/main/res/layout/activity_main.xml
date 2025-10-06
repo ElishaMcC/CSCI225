@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+    <EditText
+        android:id="@+id/editCircle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="circleRadius"
+        android:hint="Input a number for the radius of a circle"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <Button
+        android:id="@+id/confirmCircle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Display the info for the circle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editCircle"
+        />
+    <TextView
+        android:id="@+id/circumferenceDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The circumference of the circle is: null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/confirmCircle"
+        />
+    <TextView
+        android:id="@+id/areaDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The area of the circle is: null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/circumferenceDisplay"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

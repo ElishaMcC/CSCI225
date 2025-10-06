@@ -23,7 +23,7 @@
         }
 
         table{
-            font-size: 6pt;
+            font-size: 12pt;
             border: 1px solid black;
             padding: 2px;
             vertical-align: middle;
@@ -35,7 +35,7 @@
         }
 
         tr{
-            height: 5px;
+            height: 10px;
         }
         tr:nth-child(even){
             background-color: #3c5369;
@@ -43,7 +43,7 @@
         
         td[rowspan]{
             overflow: hidden;
-            line-height: 7px;
+            line-height: 15px;
         }
 
         th{
@@ -161,7 +161,7 @@
         #Introduction:hover .content, #Portfolio:hover .content, #Assignments:hover .content, #Schedule:hover .content, #ContactInfo:hover .content{
             max-height: 500px;
             height: 500px;
-            width: 500px;
+            width: 1000px;
             opacity: 1;
             rotate: 0deg;
         }

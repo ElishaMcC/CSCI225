@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HW4NO1EM</string>
+    <string name="area_reslt">The area of the circle is: %.2f</string>
+    <string name="cir_reslt">The circumference of the circle is: %.2f</string>
+</resources>
