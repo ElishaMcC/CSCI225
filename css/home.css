@@ -1,3 +1,8 @@
+        :root{
+            --start-size: 20px;
+            --start-color: yellow;
+            --link-border: 2px dashed white;
+        }
         body{
             height: 100vh;
             background-image: url("/img/SLBackground.png");
@@ -13,12 +18,15 @@
         #Navbar{
             visibility:hidden;
         }
+        #Navbar li{
+            border-radius: 10px;
+        }
 
         table{
             font-size: 6pt;
             border: 1px solid black;
             padding: 2px;
-            vertical-align: auto;
+            vertical-align: middle;
             empty-cells: hide;
             border-collapse: collapse;
             table-layout: fixed;
@@ -46,6 +54,13 @@
 
         a{
             text-decoration: none;
+            font-style: normal;
+            border: var(--link-border)
+        }
+
+        a:hover{
+            font-size: var(--start-size);
+            color: var(--start-color);
         }
 
         ul, ol{
@@ -60,13 +75,13 @@
             text-align: center;
             color: hsl(69, 91%, 9%);
             font-family: "Lora", serif;
-            font-optical-sizing: auto;
             font-weight: 100;
             font-style: normal;
         }
 
         p::first-letter{
-            font-size: 20px;
+            font-size: var(--start-size);
+            color: var(--start-color)
         }
 
         h1{
@@ -74,14 +89,16 @@
             text-align: center;
             letter-spacing: 1px;
             text-shadow: 2px 1px 1px hsl(258, 33%, 14%);
-            transition:cubic-bezier(1, 0, 0, 1);
-            clip-path: polygon(0% 0%, 90% 10%, 100% 90%, 10% 100%);
             padding: 1rem 2rem;
+            border-radius: 15px;
             width: 290px;
             height: 55px;
             background-color: hsl(212, 28%, 40%);
-            filter: drop-shadow(20px 20px 5px hsl(258, 58%, 65%));
-            transition: transform 0.3s ease-in-out;
+            filter: drop-shadow(5px 5px 5px hsl(258, 58%, 65%));
+            transition: transform 0.3s ease-in-out, rotate 1s ease;
+        }
+        h1:hover{
+            transform: rotateX(-20deg);
         }
 
 
@@ -97,33 +114,35 @@
             left: 80vw;
             top: 5vh;
         }
+
         #Portfolio{
             left: 5vw;
             top: 80vh;
+            border-right: 3px solid #fff;
+            border-bottom: 3px solid #fff;
         }
         #Portfolio > p{
             box-shadow: 2px 2px 1px black;
         }
+
         #Schedule{
             left: 80vw;
             top: 80vh;
+            border-right: 3px solid #fff;
+            border-bottom: 3px solid #fff;
         }
 
         #ContactInfo{
             left: 40vw;
             top: 0vh;
+            border-right: 3px solid #fff;
+            border-bottom: 3px solid #fff;
         }
 
-        #Introduction h1{
-            rotate: 20deg;
-        }
-        #Assignments h1{
+        #Assignments h1, #Portfolio h1{
             rotate: -20deg;
         }
-        #Portfolio h1{
-            rotate: -20deg;
-        }
-        #Schedule h1{
+        #Schedule h1, #Introduction h1{
             rotate: 20deg;
         }
 
@@ -135,19 +154,17 @@
             transform: translate(-50%, -50%);
             max-height: 0;
             overflow: hidden;
-            transition: max-height 1s ease, opacity 0.5s ease;
+            transition: max-height 1s ease, opacity 1s ease, height 2s ease;
             opacity: 0;
             z-index: 10;
         }
-
         #Introduction:hover .content, #Portfolio:hover .content, #Assignments:hover .content, #Schedule:hover .content, #ContactInfo:hover .content{
             max-height: 500px;
+            height: 500px;
+            width: 500px;
             opacity: 1;
             rotate: 0deg;
         }
-        #Introduction h1:hover, #Assignments h1:hover, #Portfolio h1:hover, #Schedule h1:hover, #ContactInfo h1:hover {
-            transform: rotate(0deg);
-}
 
         footer{
             position: fixed;
@@ -155,4 +172,3 @@
             right: 0vw;
             background-color: hsl(180, 61%, 23%);
         }
-
