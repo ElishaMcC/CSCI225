@@ -30,13 +30,16 @@ form > label {
     margin-bottom: .5rem;
 }
 
+.Navbar{
+    background-color: hsl(230, 37%, 41%);
+}
 
 #Navbar li {
     display: inline-block;
     margin: 20px;
 }
 
-.feedback{
+.feedback, iframe{
     background-color: hsl(230, 37%, 41%);
     border-radius: 20px;
     padding: 10px;

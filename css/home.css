@@ -93,7 +93,7 @@
             border-radius: 15px;
             width: 290px;
             height: 55px;
-            background-color: hsl(212, 28%, 40%);
+            background-image: linear-gradient(45deg, hsl(212, 28%, 40%), hsl(295, 24%, 48%));
             filter: drop-shadow(5px 5px 5px hsl(258, 58%, 65%));
             transition: transform 0.3s ease-in-out, rotate 1s ease;
         }
