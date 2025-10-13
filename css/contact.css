@@ -17,21 +17,18 @@ input[type="email"]:invalid {
     border: 2px dashed red;
 }
 
+
 input[type="text"]:valid,
 input[type="email"]:valid {
     background-color: green;
 }
 
-form>div {
+form > div {
     margin-bottom: 1rem;
 }
 
 form > label {
     margin-bottom: .5rem;
-}
-
-.Navbar{
-    background-color: hsl(230, 37%, 41%);
 }
 
 #Navbar li {

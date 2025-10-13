@@ -13,8 +13,8 @@
     <div class="container mb-4">
         <div class="row">
             <!-- _________Navbar DIV box___________ -->
-            <DIV class="Navbar navbar-expand-lg">
-                <ul class="navbar nav">
+            <DIV class="Navbar navbar-expand-lg bg-secondary">
+                <ul class="navbar nav font-weight-bold text-uppercase">
                     <li class="nav-item"><a href="https://www.usca.edu/" target="_blank">USCA Main Website</a></li>
                     <li class="nav-item"><a href="/index.html">Assignments</a></li>
                     <li class="nav-item"><a href="/index.html">Contact Information</a></li>
@@ -30,7 +30,7 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="embed-responsive">
-                    <iframe class="w-100" src="https://www.youtube.com/embed/qHYQRaDDVGg"
+                    <iframe class="w-100 p-10" src="https://www.youtube.com/embed/qHYQRaDDVGg"
                         title="Hallow Queen - Danny Baranowsky" height="500" width="400" allowfullscreen></iframe>
                 </div>
             </div>
@@ -41,16 +41,19 @@
                         <div class="form-floating">
                             <input type="text" name="fname" id="fname" class="form-control" placeholder="anonymous"
                                 required>
+                            <small class="form-text text-muted">Your First Name</small>
                             <label for="fname">First Name:<span class="star">*</span></label>
                         </div>
                         <div class="form-floating">
                             <input type="text" name="lname" id="lname" class="form-control" placeholder="anonymous"
                                 required>
+                            <small class="form-text text-muted">Your Last Name</small>
                             <label for="lname">Last Name:<span class="star">*</span></label>
                         </div>
                         <div class="form-floating">
                             <input type="email" name="mail" id="mail" class="form-control" placeholder="name@domain.com"
                                 pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+                            <small class="form-text text-muted">Your Email</small>
                             <label for="mail">Email Address:</label>
                         </div>
 
@@ -84,12 +87,11 @@
                             </label>
                         </div>
 
-                        <div>
+                        <div class="form-range">
                             <label>
                                 How would you rate this site?
-                                <br>
                                 1
-                                <input type="range" name="rating" min="1" max="10" value="5">
+                                <input type="range" id="rating" name="rating" min="1" max="10" value="5">
                                 10
                             </label>
                         </div>
@@ -105,7 +107,7 @@
                         <div>
                             <label>(Optional) Please insert a picture of your cute pet
                                 <br>
-                                <input type="file" name="pet">
+                                <input type="file" name="pet" disabled>
                             </label>
                         </div>
 
