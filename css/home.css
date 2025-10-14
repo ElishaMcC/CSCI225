@@ -146,6 +146,18 @@
             rotate: 20deg;
         }
 
+        #hidden{
+            position: absolute;
+            opacity: 0;
+            left: 5vw;
+            top: 57vh;
+        }
+
+        #hidden:hover{
+            opacity: .5;
+            visibility: visible;
+        }
+
         .content{
             pointer-events: none;
         }
