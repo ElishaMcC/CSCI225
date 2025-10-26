@@ -1,0 +1,23 @@
+body{
+    background-color: hsl(60, 76%, 77%);
+}
+.form-floating, .d-flex{
+    padding: 10px;
+}
+.col-md-5{
+    border: 3px solid hsl(0, 0%, 68%);
+    border-radius: 10px;
+}
+
+.total{
+    font-weight: bold;
+}
+table{
+    width: 100%;
+}
+tr:nth-child(odd){
+            background-color: hsl(0, 0%, 68%);
+}
+tr:nth-child(even){
+            background-color: hsl(60, 76%, 77%);
+}
